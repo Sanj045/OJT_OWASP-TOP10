@@ -27,3 +27,16 @@ Dự án bao gồm 2 phiên bản đối lập:
 Mở terminal tại thư mục dự án và chạy lệnh:
 ```bash
 pip install flask python-dotenv
+```
+### 3. Cấu hình Database & Môi trường
+Bước 1: Tạo file .env (nếu chưa có) và thêm nội dung sau:
+```bash
+DB_PATH=database.db
+DB_PASSWORD=secret123
+```
+Bước 2: Khởi tạo dữ liệu mẫu (Reset Database):
+Chạy lệnh sau để tạo database với 2 user mẫu (admin và sinhvien1):
+```bash
+python init_db.py
+```
+
